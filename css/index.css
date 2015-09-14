@@ -1,7 +1,6 @@
 img {
   height: 64px;
   width: 64px;
-  margin-top: 10px;
 }
 
 #main-wrapper {
@@ -17,10 +16,18 @@ img {
 
 #name {
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  margin-left: 8px;
 }
 
 li {
-  margin-left: 18px;
+  margin-left: 0px;
+  list-style-type: none;
+  padding: 4px 10px;
 }
 
 
