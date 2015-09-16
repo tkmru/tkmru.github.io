@@ -23,6 +23,14 @@ body {
   100% { background-color: #e74c3c; }
 }
 
+a {
+  color:rgb(204, 198, 204);;
+  text-decoration:none;
+}
+a:hover {
+  color: rgb(254, 129, 253);
+}
+
 img {
   height: 64px;
   width: 64px;
