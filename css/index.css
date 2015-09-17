@@ -1,30 +1,28 @@
 body {
   /*background-color: rgb(29, 149, 125);*/
   background-color: #e74c3c;
-  animation: bg-color 10s infinite;
-  -webkit-animation: bg-color 10s infinite;
+  animation: bg-color 20s infinite;
+  -webkit-animation: bg-color 20s infinite;
 }
 
 @-webkit-keyframes bg-color {
-  0% { background-color: #e74c3c; }
-  20% { background-color: #f1c40f; }
-  40% { background-color: #1abc9c; }
-  60% { background-color: #3498db; }
-  80% { background-color: #9b59b6; }
-  100% { background-color: #e74c3c; }
+  0% { background-color: #ef7b88; }
+  33% { background-color: #fecd6d; }
+  66% { background-color: #acdacf; }
+  100% { background-color: #87c3db; }
 }
 
 @keyframes bg-color {
-  0% { background-color: #e74c3c; }
-  20% { background-color: #f1c40f; }
-  40% { background-color: #1abc9c; }
-  60% { background-color: #3498db; }
-  80% { background-color: #9b59b6; }
-  100% { background-color: #e74c3c; }
+  0% { background-color: rgb(0, 105, 156); }
+  11% { background-color: rgb(12, 148, 179); }
+  37% { background-color: rgb(0, 178, 156); }
+  63% { background-color: rgb(0, 102, 126); }
+  89% { background-color: rgb(0, 124, 186); }
+  100% { background-color:  rgb(0, 105, 156); }
 }
 
 a {
-  color:rgb(204, 198, 204);;
+  color: rgb(246, 246, 246);
   text-decoration:none;
 }
 a:hover {
@@ -40,13 +38,11 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin:-300px 0 0 -300px;
+  margin:-300px 0 0 -180px;
   height: 600px;
-  width: 600px;
-  background-color: rgb(246, 246, 246);
-  border-radius: 14px;
-  color: #fff;
-  background-color: rgba(111, 109, 111, 0.55 );
+  width: 360px;
+  color: rgb(255, 255, 255);
+  /*background-color: rgba(111, 109, 111, 0.55 );*/
 }
 
 #name {
