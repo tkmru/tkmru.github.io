@@ -32,14 +32,24 @@ img {
   width: 64px;
 }
 
-#main-wrapper {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin:-300px 0 0 -180px;
-  height: 600px;
-  width: 360px;
-  color: rgb(255, 255, 255);
+@media screen and (min-width: 601px){
+  #main-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin:-300px 0 0 -180px;
+    height: 600px;
+    width: 360px;
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media screen and (max-width: 600px){
+  #main-wrapper {
+    height: 600px;
+    width: 100%;
+    color: rgb(255, 255, 255);
+  }
 }
 
 #icon {
