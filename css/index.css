@@ -35,7 +35,6 @@ img {
 #main-wrapper {
   color: rgb(255, 255, 255);
   height: 700px;
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 601px){
