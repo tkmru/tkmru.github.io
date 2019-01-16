@@ -1,64 +1,85 @@
 <!DOCTYPE html>
-<html lang='ja'>
-<head>
-  <meta charset='UTF-8'>
-  <meta name="viewport" content="width=device-width,user-scalable=0">
-  <title>About</title>
-  <link rel='stylesheet' href='css/reset.css'>
-  <link rel="stylesheet" href="css/index.css">
-</head>
-<body>
-  <div id='main-wrapper'>
-    <div id='icon'>
-      <img src='./img/icon.gif' alt='tkmru animation icon'>
-    </div>
-    <h1>Profile</h1>
-    <ul>
-      <li>Name: takemaru</li>
-      <li>Job: Security Engineer</li>
-      <ul class='child-list'>
-        <li>- Web Application Assessment</li>
-        <li>- Mobile App Assessment</li>
-        <li>- Game Security Testing</li>
-        <li>- Security Tool Development</li>
-      </ul>
-      <li><s>CTF team: <a href='https://tomorinao.pro'>Team TomoriNao</a></s></li>
-      <li>技術同人誌サークル: <a href='https://tomorinao.pro'>Team TomoriNao</a></li>
-    </ul>
-    <br>
-    <br>
-    <h1>Activities</h1>
-    <ul>
-      <li><a href='https://summerofcode.withgoogle.com/archive/2017/projects/4749387720818688/'>Google Summer of Code 2017 Metasploit Project</a></li>
-      <li>IPA Security mini camp in Kobe 2017 TA</li>
-      <li>IPA Security mini camp in Kyoto 2017 TA</li>
-      <li>CODE BLUE 2016 student staff</li>
-      <li>CyberAgent Internship 2016</li>
-      <li><a href='https://www.kdl.co.jp/event_info/event/2016/04/20160528sec_kobe.html'>医療セキュリティハッキングコンテスト神戸2016 3位</a></li>
-      <li><a href='http://2015.seccon.jp/result.html'>SECCON 2015 Finals</a></li>
-      <li>IPA Security camp 2015</li>
-      <li>pixiv 2015 SPRING BOOT CAMP(Internship)</li>
-      <li>ICT Challenge+R 2014 奨励賞</li>
-    </ul>
-    <br>
-    <br>
-    <h1>Acounts</h1>
-    <ul>
-      <li>E-mail: i.am.tkmru (at) gmail.com</li>
-      <li>Twitter: <a href='https://twitter.com/tkmru'>@tkmru</a></li>
-      <li>Blog: <a href='http://tkmr.hatenablog.com'>脱力系日記</a></li>
-      <li>Github: <a href='https://github.com/tkmru'>tkmru</a></li>
-      <li>Speakerdeck: <a href='https://speakerdeck.com/tkmru/'>tkmru</a></li>
-      <li>Wishlist: <a href='https://www.amazon.co.jp/registry/wishlist/1ZQ9R5PNHOWIG/ref=cm_sw_r_tw_ws_x_Ed2aybF2Z98GK'>干し芋</a></li>
-    </ul>
-    <br>
-    <br>
-    <footer>
-      <hr>
-      <a href="http://validator.w3.org/check?uri=http%3A%2F%2Ftkmru.github.com%2F">Valid HTML5!</a>
-      <br>
-      <br>
-    </footer>
-  </div>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>tkmru</title>
+        <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
+        <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
+        <link rel="stylesheet" href="./css/tabs.css">
+    </head>
+    <body>
+        <section class="hero is-info">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title">
+                    My Portfolio
+                    </h1>
+                </div>
+            </div>
+            <div class="tabs is-boxed is-centered main-menu" id="nav">
+                <ul>
+                    <li data-target="pane-1" id="1" class="is-active">
+                        <a>
+                            <span class="icon is-small"><i class="fa fa-image"></i></span>
+                            <span>Profile</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-2" id="2"　class="is-active">
+                        <a>
+                            <span class="icon is-small"><i class="fab fa-empire"></i></span>
+                            <span>Activities</span>
+                        </a>
+                    </li>
+                    <li data-target="pane-3" id="3"　class="is-active">
+                        <a>
+                            <span class="icon is-small"><i class="fab fa-superpowers"></i></span>
+                            <span>Acounts</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div class="tab-pane is-active" id="pane-1" class="level">
+                    <div class="content">
+                        <li>Name: takemaru</li>
+                        <li>Job: Security Engineer</li>
+                        <ul>
+                            <li>Web Application Assessment</li>
+                            <li>Mobile App Assessment</li>
+                            <li>Game Security Testing</li>
+                            <li>Security Tool Development</li>
+                        </ul>
+                        <li><s>CTF team: <a href='https://tomorinao.pro'>Team TomoriNao</a></s></li>
+                        <li>技術同人誌サークル: <a href='https://tomorinao.pro'>Team TomoriNao</a></li>
+                    </div>
+                </div>
+                <div class="tab-pane" id="pane-2">
+                    <div class="content">
+                        <li><a href='https://summerofcode.withgoogle.com/archive/2017/projects/4749387720818688/'>Google Summer of Code 2017 Metasploit Project</a></li>
+                        <li>IPA Security mini camp in Kobe 2017 TA</li>
+                        <li>IPA Security mini camp in Kyoto 2017 TA</li>
+                        <li>CODE BLUE 2016 student staff</li>
+                        <li>CyberAgent Internship 2016</li>
+                        <li><a href='https://www.kdl.co.jp/event_info/event/2016/04/20160528sec_kobe.html'>医療セキュリティハッキングコンテスト神戸2016 3位</a></li>
+                        <li><a href='http://2015.seccon.jp/result.html'>SECCON 2015 Finals</a></li>
+                        <li>IPA Security camp 2015</li>
+                        <li>pixiv 2015 SPRING BOOT CAMP(Internship)</li>
+                        <li>ICT Challenge+R 2014 奨励賞</li>
+                    </div>
+                </div>
+                <div class="tab-pane" id="pane-3">
+                    <div class="content">
+                        <li>E-mail: i.am.tkmru (at) gmail.com</li>
+                        <li>Twitter: <a href='https://twitter.com/tkmru'>@tkmru</a></li>
+                        <li>Blog: <a href='http://tkmr.hatenablog.com'>脱力系日記</a></li>
+                        <li>Github: <a href='https://github.com/tkmru'>tkmru</a></li>
+                        <li>Speakerdeck: <a href='https://speakerdeck.com/tkmru/'>tkmru</a></li>
+                        <li>Wishlist: <a href='https://www.amazon.co.jp/registry/wishlist/1ZQ9R5PNHOWIG/ref=cm_sw_r_tw_ws_x_Ed2aybF2Z98GK'>干し芋</a></li> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./js/tabs.js"></script>
 </body>
 </html>
