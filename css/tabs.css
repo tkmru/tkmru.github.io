@@ -1,36 +1,46 @@
 .tabs {
-margin-bottom: -1px !important;
-position: relative;
+	margin-bottom: -1px !important;
+	position: relative;
 }
 .tab-content {
-padding: 60px;
-top: 197px;
-color: #000;
-background-color: white;
+	top: 197px;
+	color: #000;
+	background-color: white;
 }
-.tab-pane {
-display: none;
-width: 60%;
-position: relative;
-left: 50%;
-transform: translateX(-40%);
+
+@media screen and (min-width: 601px){
+	.tab-pane {
+		display: none;
+		position: relative;
+		width: 60%;
+		left: 50%;
+		transform: translateX(-40%);
+	}
+
+	.tab-content {
+		padding: 60px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	.tab-pane {
+		display: none;
+		position: relative;
+		width: 100%;
+		left: 0%;
+		transform: translateX(0%);
+	}
+
+	.tab-content {
+		padding: 30px;
+	}
 }
 .tab-pane.is-active {
-display: block;
+	display: block;
 }
 .is-active {
-display: initial;
+	display: initial;
 }
-
-.cent{
-display: block;
-margin: 10px auto;
-padding: 5px;
-border: 1px solid #ccc}
-
-.video
-{display: block;
-margin: 0 auto;}
 
 /* CSS from http://embedresponsively.com */
 .embed-container {
