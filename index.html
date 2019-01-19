@@ -3,9 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <title>tkmru</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css'>
     <link rel='stylesheet prefetch' href='https://use.fontawesome.com/releases/v5.0.10/css/all.css'>
-    <link rel="stylesheet" href="./css/tabs.css">
+    <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
     <section class="hero is-primary is-medium">
@@ -54,54 +55,75 @@
       </div>
     </section>
     <section class="section">
-      <div class="tabs is-boxed is-centered main-menu" id="nav">
-        <ul>
-          <li data-target="pane-1" id="1" class="is-active">
-            <a>
-              <span class="icon is-small"><i class="fa fa-image"></i></span>
-              <span>Profile</span>
-            </a>
-          </li>
-          <li data-target="pane-2" id="2"　class="is-active">
-            <a>
-              <span class="icon is-small"><i class="fab fa-empire"></i></span>
-              <span>Activities</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-      <div class="tab-content">
-        <div class="tab-pane is-active" id="pane-1" class="level">
-          <div class="content">
-            <li>Name: takemaru</li>
-            <li>Job: Security Engineer</li>
-            <ul>
-              <li>Web Application Assessment</li>
-              <li>Mobile App Assessment</li>
-              <li>Game Security Testing</li>
-              <li>Security Tool Development</li>
-            </ul>
-            <li><s>CTF team: <a href='https://tomorinao.pro'>Team TomoriNao</a></s></li>
-            <li>技術同人誌サークル: <a href='https://tomorinao.pro'>Team TomoriNao</a></li>
+      <div class="container">
+        <div class="columns">
+          <div class="column is-3">
+            <aside class="is-medium menu">
+              <p class="menu-label">
+                categories
+              </p>
+              <ul class="menu-list">
+                <li class="is-right"><a href="#about">About</a></li>
+                <li><a href="#activity">Activity</a></li>
+              </ul>
+            </aside>
           </div>
-        </div>
-        <div class="tab-pane" id="pane-2">
-          <div class="content">
-            <li><a href='https://summerofcode.withgoogle.com/archive/2017/projects/4749387720818688/'>Google Summer of Code 2017 Metasploit Project</a></li>
-            <li>IPA Security mini camp in Kobe 2017 TA</li>
-            <li>IPA Security mini camp in Kyoto 2017 TA</li>
-            <li>CODE BLUE 2016 student staff</li>
-            <li>CyberAgent Internship 2016</li>
-            <li><a href='https://www.kdl.co.jp/event_info/event/2016/04/20160528sec_kobe.html'>医療セキュリティハッキングコンテスト神戸2016 3位</a></li>
-            <li><a href='http://2015.seccon.jp/result.html'>SECCON 2015 Finals</a></li>
-            <li>IPA Security camp 2015</li>
-            <li>pixiv 2015 SPRING BOOT CAMP(Internship)</li>
-            <li>ICT Challenge+R 2014 奨励賞</li>
+          <div class="column is-9">
+            <div class="content is-medium">
+              <h1 id="about">About me</h1>
+              <li>Name: takemaru</li>
+              <li>Job: Security Engineer</li>
+              <ul>
+                <li>Web Application Assessment</li>
+                <li>Mobile App Assessment</li>
+                <li>Game Security Testing</li>
+                <li>Security Tool Development</li>
+              </ul>
+              <li><s>CTF team: <a href='https://tomorinao.pro'>Team TomoriNao</a></s></li>
+              <li>技術同人誌サークル: <a href='https://tomorinao.pro'>Team TomoriNao</a></li>
+
+              <hr class="hr" style="margin-bottom: 0;">
+
+              <h1 id="activity">Activity</h1>
+              <h2>OSS contribution</h2>
+              <li>Metasploit</li>
+              <li>Sinatra</li>
+
+              <h2>Event</h2>
+              <li><a href='https://summerofcode.withgoogle.com/archive/2017/projects/4749387720818688/'>Google Summer of Code 2017 Metasploit Project</a></li>
+              <li>IPA Security mini camp in Kobe 2017 TA</li>
+              <li>IPA Security mini camp in Kyoto 2017 TA</li>
+              <li>CODE BLUE 2016 student staff</li>
+              <li>CyberAgent Internship 2016</li>
+              <li><a href='https://www.kdl.co.jp/event_info/event/2016/04/20160528sec_kobe.html'>医療セキュリティハッキングコンテスト神戸2016 3位</a></li>
+              <li><a href='http://2015.seccon.jp/result.html'>SECCON 2015 Finals</a></li>
+              <li>IPA Security camp 2015</li>
+              <li>pixiv 2015 SPRING BOOT CAMP(Internship)</li>
+              <li>ICT Challenge+R 2014 奨励賞</li>
+
+              <hr class="hr" style="margin-bottom: 0;">
+
+              <h1 id="contact">Contact</h1>
+              <span class="icon">
+                <i class="fas fa-envelope"></i>
+              </span>
+              i.am.tkmru[@]gmail.com
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <script src="./js/tabs.js"></script>
+  <script>
+      window.addEventListener('resize', () => {
+      const divs = document.querySelectorAll(".menu-list");
+      if (window.innerWidth < 768){
+        divs.forEach(div => div.classList.add("tags"));
+      }
+      else {
+        divs.forEach(div => div.classList.remove("tags"));
+      }
+    });
+    </script>  
 </body>
 </html>
