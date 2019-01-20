@@ -1,65 +1,21 @@
-.tabs {
-	margin-bottom: -1px !important;
-	position: relative;
-}
-.tab-content {
-	top: 197px;
-	color: #000;
-	background-color: white;
+.hero {
+  animation: bg-color 20s infinite;
+  -webkit-animation: bg-color 20s infinite;
 }
 
-@media screen and (min-width: 601px){
-	.tab-pane {
-		display: none;
-		position: relative;
-		width: 60%;
-		left: 50%;
-		transform: translateX(-40%);
-	}
-
-	.tab-content {
-		padding: 60px;
-	}
-}
-
-@media screen and (max-width: 600px){
-	.tab-pane {
-		display: none;
-		position: relative;
-		width: 100%;
-		left: 0%;
-		transform: translateX(0%);
-	}
-
-	.tab-content {
-		padding: 30px;
-	}
-}
-.tab-pane.is-active {
-	display: block;
-}
-.is-active {
-	display: initial;
-}
-
-/* CSS from http://embedresponsively.com */
-.embed-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	height: 0;
-	overflow: hidden;
-	max-width: 100%;
-}
-.embed-container iframe,
-.embed-container object,
-.embed-container embed {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
+@keyframes bg-color {
+  0% { background-color: rgb(0, 105, 156); }
+  11% { background-color: rgb(12, 148, 179); }
+  37% { background-color: rgb(0, 178, 156); }
+  63% { background-color: rgb(0, 102, 126); }
+  89% { background-color: rgb(0, 124, 186); }
+  100% { background-color:  rgb(0, 105, 156); }
 }
 
 .content a:hover {
-	color: rgb(254, 129, 253) !important;
+  color: rgb(254, 129, 253) !important;
+}
+
+.hero a:hover {
+  color: rgb(0, 102, 126) !important;
 }
