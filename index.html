@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/index.css">
   </head>
   <body>
+    <!-- Header -->
     <section class="hero is-primary is-medium">
       <div class="hero-body">
         <div class="columns">
@@ -57,17 +58,42 @@
     <section class="section">
       <div class="container">
         <div class="columns">
+          <!-- Side Menu -->
           <div class="column is-3">
             <aside class="is-medium menu">
               <p class="menu-label">
-                categories
+                menu
               </p>
               <ul class="menu-list">
-                <li class="is-right"><a href="#about">About</a></li>
-                <li><a href="#activity">Activity</a></li>
+                <li class="is-right">
+                  <a href="#about">
+                    <span class="icon">
+                      <i class="fas fa-info"></i>
+                    </span>
+                    <span>About</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#activity">
+                    <span class="icon">
+                      <i class="fas fa-bars"></i>
+                    </span>
+                    <span>Activity</span>
+                  </a>
+                </li>
+                <li>
+                  <a class="navbar-item" href="#contact">
+                  <span class="icon">
+                    <i class="fas fa-envelope"></i>
+                  </span>
+                  <span>Contact</span>
+                  </a>
+                </li>
               </ul>
             </aside>
           </div>
+
+          <!-- Main Contents -->
           <div class="column is-9">
             <div class="content is-medium">
               <h1 id="about">About me</h1>
@@ -114,6 +140,14 @@
       </div>
     </div>
   </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="content has-text-centered">
+    Copyright © 2019.
+    Made with <a href="https://bulma.io/" target="_blank" rel="noreferrer"><b>Bulma</b></a>
+    </div>
+  </footer>
   <script>
       window.addEventListener('resize', () => {
       const divs = document.querySelectorAll(".menu-list");
