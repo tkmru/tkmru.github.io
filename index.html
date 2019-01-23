@@ -163,7 +163,7 @@
                   <div class="card">
                     <div class="card-image">
                       <figure class="image">
-                        <img src="./img/preview-vol1.jpg">
+                        <img src="./img/preview-vol1.jpg" class="modal-button" data-target="tomori1-modal">
                       </figure>
                     </div>
                     <div class="card-content">
@@ -179,7 +179,7 @@
                   <div class="card">
                     <div class="card-image">
                       <figure class="image">
-                        <img src="./img/preview-vol2.jpg">
+                        <img src="./img/preview-vol2.jpg" class="modal-button" data-target="tomori2-modal">
                       </figure>
                     </div>
                     <div class="card-content">
@@ -215,6 +215,23 @@
     Old version is <a href="https://tkmru.github.io/old" target="_blank" rel="noreferrer"><b>here</b></a>.
     </div>
   </footer>
+
+  <div id="tomori1-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content is-huge is-image">
+      <img src="./img/preview-vol1.jpg" alt="">
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
+  <div id="tomori2-modal" class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content is-huge is-image">
+      <img src="./img/preview-vol2.jpg" alt="">
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+
   <script>
       window.addEventListener('resize', () => {
       const divs = document.querySelectorAll(".menu-list");
@@ -225,6 +242,7 @@
         divs.forEach(div => div.classList.remove("tags"));
       }
     });
-    </script>  
+  </script>
+  <script src="https://unpkg.com/bulma-modal-fx/dist/js/modal-fx.min.js"></script>
 </body>
 </html>
